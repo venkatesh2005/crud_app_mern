@@ -12,7 +12,7 @@ const StudentProfile = () => {
 
     const fetchStudents = async () => {
         try {
-            const res = await axios.get('https://crud-app-mern-1-94qb.onrender.com/api/students');
+            const res = await axios.get('http://localhost:5000/api/students');
             setStudents(res.data);
         } catch (error) {
             console.error('Error fetching students:', error.response ? error.response.data : error.message);
